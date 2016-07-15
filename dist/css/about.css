@@ -1,0 +1,15 @@
+#about section {
+  padding: 40px 0px; }
+
+#about #photos {
+  background-color: #F0F0F0; }
+
+#about img {
+  max-height: 300px;
+  margin: 0 auto;
+  max-width: 300px; }
+
+#about .quote {
+  color: #3B5998;
+  font-size: 28px;
+  font-style: italic; }

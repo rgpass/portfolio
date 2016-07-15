@@ -1,0 +1,23 @@
+@import "./_variables.scss";
+
+#about {
+  section {
+    padding: 40px 0px;
+  }
+
+  #photos {
+    background-color: $light-gray;
+  }
+
+  img {
+    max-height: 300px;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .quote {
+    color: $navy;
+    font-size: 28px;
+    font-style: italic;
+  }
+}
