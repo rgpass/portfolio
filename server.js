@@ -1,10 +1,22 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/assets'));
+
+app.get('/', function(req, res) {
+  res.render('about', {
+    title: 'about me',
+    env: process.env.NODE_ENV
+  });
 });
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Example app listening on port 3000!');
+app.get('*', function (req, res) {
+  res.render('about');
+});
+
+app.listen(process.env.PORT, function () {
+  console.log('Example app listening on port ' + process.env.PORT + '!');
 });

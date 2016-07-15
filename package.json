@@ -2,7 +2,11 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio site for Gerry Pass (www.gerrypass.com)",
+  "private": true,
   "main": "server.js",
+  "engines": {
+    "node": "6.3.0"
+  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +16,9 @@
   "author": "Gerry Pass",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "foreman": "^1.4.1",
+    "morgan": "^1.7.0"
   }
 }
