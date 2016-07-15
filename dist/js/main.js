@@ -1,10 +1,11 @@
 'use strict';
 
-var menuOpen = document.getElementById('menu-trigger-wrapper');
+var menuTrigger = document.getElementById('menu-trigger');
 var menu = document.getElementById('menu');
 
-menuOpen.addEventListener('click', function () {
+menuTrigger.addEventListener('click', function () {
   event.preventDefault();
 
+  menuTrigger.classList.toggle('opened');
   menu.classList.toggle('opened');
 });

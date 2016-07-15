@@ -1,7 +1,7 @@
 $blue: #3AC0F0;
 $navy: #3B5998;
-$font-family: 'Nunito', sans-serif;
-$header-fonts: 'Roboto', sans-serif;
+$font-family: 'Heebo', sans-serif;
+$header-fonts: 'Exo', sans-serif;
 
 $white: #FFF;
 $black: #333;
@@ -10,4 +10,6 @@ $gray: #979797;
 $light-gray: #F0F0F0;
 
 $header-menu-z-index: 4;
+$menu-trigger-z-index: 5;
+$menu-open-time: 0.25s;
 $outside-gutter-spacing: 10px;

@@ -11,10 +11,12 @@
 
   color: $white;
   font-family: $header-fonts;
+  font-weight: 300;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.50);
 
   a, a:visited {
     color: $white;
+    text-decoration: none;
   }
 
   #wrapper {
@@ -32,6 +34,7 @@
     width: 1px;
     padding: 0 $outside-gutter-spacing;
     white-space: nowrap;
+    font-size: 20px;
   }
 
   #middle {
@@ -45,5 +48,71 @@
     padding: 0 $outside-gutter-spacing;
     vertical-align: middle;
     text-align: right;
+
+    span {
+      content: '';
+      background: $white;
+      height: 4px;
+      width: 36px;
+    }
+  }
+
+  #menu-trigger {
+    position: fixed;
+    top: 0;
+    right: 2px;
+    z-index: $menu-trigger-z-index;
+    height: 44px;
+    width: 44px;
+
+    overflow: hidden;
+    color: transparent;
+    white-space: nowrap;
+    text-indent: 100%;
+
+    span, span::before, span::after {
+      position: absolute;
+      height: 4px;
+      width: 26px;
+      background: $white;
+    }
+
+    span {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      transition: background $menu-open-time;
+    }
+
+    span::before, span::after {
+      content: '';
+      top: 0;
+      left: 0;
+
+      transition: transform $menu-open-time;
+    }
+
+    span::before {
+      transform: translateY(-10px);
+    }
+
+    span::after {
+      transform: translateY(10px)
+    }
+
+    &.opened {
+      span {
+        background: transparent;
+      }
+
+      span::before {
+        transform: rotate(-45deg);
+      }
+
+      span::after {
+        transform: rotate(45deg);
+      }
+    }
   }
 }

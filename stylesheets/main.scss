@@ -29,12 +29,21 @@ a {
     color: $blue;
     font-weight: bold;
   }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-fonts;
   margin: 0;
   color: $black;
+  font-weight: 700;
 }
 
 p {
