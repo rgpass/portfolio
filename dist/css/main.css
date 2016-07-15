@@ -72,6 +72,13 @@ body {
   margin-top: 45px;
   font-family: "Nunito", sans-serif; }
 
+main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto; }
+  main #wrapper {
+    padding: 0 10px; }
+
 a {
   cursor: pointer;
   text-decoration: none; }

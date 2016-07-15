@@ -9,6 +9,17 @@ body {
   font-family: $font-family;
 }
 
+main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  #wrapper {
+    padding: 0 $outside-gutter-spacing;
+  }
+}
+
+
 a {
   cursor: pointer;
   text-decoration: none;
