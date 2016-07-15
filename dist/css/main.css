@@ -26,7 +26,8 @@
     width: 1px;
     padding: 0 10px;
     white-space: nowrap;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: 700; }
   #header #middle {
     display: table-cell;
     width: 100%; }
@@ -147,11 +148,14 @@ a {
   text-decoration: none; }
   a, a:visited {
     color: #3AC0F0;
-    font-weight: bold; }
+    font-weight: 400; }
   a:hover {
     text-decoration: underline; }
   a:focus {
     text-decoration: none; }
+
+* {
+  font-weight: 100; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Exo", sans-serif;
@@ -172,7 +176,8 @@ p {
 #one-sentence-summary {
   margin-top: 10px;
   font-size: 17px;
-  font-family: "Heebo", sans-serif; }
+  font-family: "Heebo", sans-serif;
+  font-weight: 100; }
 
 blockquote {
   margin: 0 auto;
