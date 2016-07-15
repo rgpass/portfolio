@@ -3,12 +3,12 @@
 #menu {
   box-sizing: border-box;
 
-  z-index: 4;
+  z-index: $header-menu-z-index;
   position: fixed;
-  right: 0px;
+  right: 0;
   top: 42px;
   width: 100%;
-  max-width: 400px;
+  max-width: 228px;
   height: calc(100vh - 42px);
 
   background-color: $blue;
@@ -26,7 +26,7 @@
 
   a {
     display: table;
-    width: 100%;
+    width: calc(100% - 10px);
     height: 60px;
     font-size: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -36,6 +36,7 @@
     &, &:visited {
       color: $white;
     }
+    padding-left: 10px;
 
     span {
       display: table-cell;
