@@ -1,3 +1,23 @@
-h1 {
-  color: blue;
+@import "./_variables.scss";
+@import "./_header.scss";
+@import "./_menu.scss";
+
+body {
+  margin: 0;
+  margin-top: 45px;
+
+  font-family: $font-family;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  &, &:visited {
+    color: $blue;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-fonts;
 }

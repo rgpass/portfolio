@@ -14,4 +14,12 @@ PORT=3000
 
 * Start the server with foreman: `$ nf start dev=1`
   * Can simulate the web environment: `$ nf start web=1`
-* Start watch processes: `$ gulp watch`
+* Start watch processes: `$ gulp serve`
+
+# File Organization
+
+Although the componentized architecture is much cleaner, for smaller apps it adds a lot of overhead. Thus, I went with a flat architecture.
+
+# Custom and Vanilla
+
+Rather than using frameworks or libraries, I wanted to showcase my skills by doing everything custom and with vanilla JS.
