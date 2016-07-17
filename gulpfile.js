@@ -1,11 +1,13 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
+var browserSync = require('browser-sync').create();
 
 var distPath = './dist';
 var scssPaths = './stylesheets/**/*.scss';
 var jsPaths = './javascripts/**/*.js';
 var imgPaths = './images/**/*.*';
+var viewPaths = './views/**/*.ejs';
 var pathsToCopy = [imgPaths];
 
 gulp.task('sass', function compileSass() {
@@ -28,8 +30,13 @@ gulp.task('copy-images', function copyFiles() {
 });
 
 gulp.task('watch', function watchForChanges() {
-  gulp.watch(scssPaths, ['sass']);
-  gulp.watch(jsPaths, ['es6']);
+  browserSync.init({
+    proxy: 'http://localhost:3000'
+  });
+
+  gulp.watch(scssPaths, ['sass']).on('change', browserSync.reload);
+  gulp.watch(jsPaths, ['es6']).on('change', browserSync.reload);
+  gulp.watch(viewPaths).on('change', browserSync.reload);
 });
 
 gulp.task('serve', ['sass', 'es6', 'copy-images', 'watch']);
