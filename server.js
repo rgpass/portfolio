@@ -34,6 +34,13 @@ app.get('/faqs', function(req, res) {
   });
 });
 
+app.get('/hire-me', function(req, res) {
+  res.render('hire-me', {
+    title: 'hire me',
+    env: process.env.NODE_ENV
+  });
+});
+
 app.get('*', function (req, res) {
   res.render('about', {
     title: 'about me',

@@ -218,6 +218,28 @@
   #faqs .content-well .question {
     font-weight: 700; }
 
+#hire-me section {
+  margin-top: 30px; }
+
+#hire-me .contact-group {
+  display: table;
+  margin-bottom: 15px; }
+  #hire-me .contact-group .icon {
+    display: table-cell;
+    background-color: #3AC0F0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
+  #hire-me .contact-group .info {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-size: 17px; }
+
 body {
   margin: 0;
   margin-top: 45px;
