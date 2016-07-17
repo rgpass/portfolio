@@ -1,0 +1,31 @@
+@import "./_variables.scss";
+
+#problems-i-solve {
+  section {
+    margin-top: 30px;
+  }
+
+  .content-well {
+    background-color: $light-gray;
+
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    border-radius: 5px;
+    padding: 5px;
+
+    .problem {
+      font-weight: 700;
+
+      .not-bold {
+        font-weight: 300;
+      }
+    }
+  }
+
+  #cta-section {
+    text-align: center;
+    margin: 40px 0px;
+  }
+}

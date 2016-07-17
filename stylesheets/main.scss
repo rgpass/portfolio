@@ -3,6 +3,7 @@
 @import "./_menu.scss";
 @import "./about.scss";
 @import "./my-work.scss";
+@import "./problems-i-solve.scss";
 
 body {
   margin: 0;
@@ -90,4 +91,20 @@ blockquote {
 
 .strong {
   font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  background: $blue;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: $white;
+  font-weight: 300;
+
+  &:hover, &:visited, &:focus {
+    color: $white;
+    text-decoration: none;
+  }
 }

@@ -1,0 +1,18 @@
+#problems-i-solve section {
+  margin-top: 30px; }
+
+#problems-i-solve .content-well {
+  background-color: #F0F0F0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px; }
+  #problems-i-solve .content-well:last-of-type {
+    margin-bottom: 0px; }
+  #problems-i-solve .content-well .problem {
+    font-weight: 700; }
+    #problems-i-solve .content-well .problem .not-bold {
+      font-weight: 300; }
+
+#problems-i-solve #cta-section {
+  text-align: center;
+  margin: 40px 0px; }

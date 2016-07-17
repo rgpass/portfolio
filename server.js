@@ -20,6 +20,13 @@ app.get('/my-work', function(req, res) {
   });
 });
 
+app.get('/problems-i-solve', function(req, res) {
+  res.render('problems-i-solve', {
+    title: 'problems I solve',
+    env: process.env.NODE_ENV
+  });
+});
+
 app.get('*', function (req, res) {
   res.render('about');
 });

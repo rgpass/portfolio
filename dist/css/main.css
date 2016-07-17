@@ -188,6 +188,25 @@
     #my-work .timeline-block .timeline-well .content p:last-of-type {
       margin-bottom: 0px; }
 
+#problems-i-solve section {
+  margin-top: 30px; }
+
+#problems-i-solve .content-well {
+  background-color: #F0F0F0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px; }
+  #problems-i-solve .content-well:last-of-type {
+    margin-bottom: 0px; }
+  #problems-i-solve .content-well .problem {
+    font-weight: 700; }
+    #problems-i-solve .content-well .problem .not-bold {
+      font-weight: 300; }
+
+#problems-i-solve #cta-section {
+  text-align: center;
+  margin: 40px 0px; }
+
 body {
   margin: 0;
   margin-top: 45px;
@@ -251,3 +270,16 @@ blockquote {
 
 .strong {
   font-weight: 700; }
+
+.btn {
+  display: inline-block;
+  background: #3AC0F0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 300; }
+  .btn:hover, .btn:visited, .btn:focus {
+    color: #FFF;
+    text-decoration: none; }
