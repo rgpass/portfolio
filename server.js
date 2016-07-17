@@ -27,8 +27,18 @@ app.get('/problems-i-solve', function(req, res) {
   });
 });
 
+app.get('/faqs', function(req, res) {
+  res.render('faqs', {
+    title: 'faqs',
+    env: process.env.NODE_ENV
+  });
+});
+
 app.get('*', function (req, res) {
-  res.render('about');
+  res.render('about', {
+    title: 'about me',
+    env: process.env.NODE_ENV
+  });
 });
 
 app.listen(process.env.PORT, function () {

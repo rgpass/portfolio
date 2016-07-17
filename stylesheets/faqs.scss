@@ -1,0 +1,20 @@
+@import "./_variables.scss";
+
+#faqs {
+  section {
+    margin-top: 30px;
+  }
+
+  .content-well {
+    background-color: $light-gray;
+
+    margin-bottom: 20px;
+
+    border-radius: 5px;
+    padding: 5px;
+
+    .question {
+      font-weight: 700;
+    }
+  }
+}
