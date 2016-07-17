@@ -147,7 +147,7 @@
   left: 24px;
   height: 100%;
   width: 2px;
-  background-color: #666; }
+  background-color: #333; }
 
 #my-work .timeline-block {
   width: 100%;
@@ -155,7 +155,7 @@
   margin-bottom: 20px; }
   #my-work .timeline-block .icon-circle {
     background: #333;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);*/
     display: inline-block;
     position: absolute;
     top: 0;
