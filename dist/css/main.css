@@ -134,6 +134,60 @@
 #about blockquote:nth-of-type(even), #about .cite:nth-of-type(even) {
   text-align: right; }
 
+#my-work section {
+  margin-top: 30px; }
+
+#my-work #timeline {
+  position: relative; }
+
+#my-work #timeline::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 24px;
+  height: 100%;
+  width: 2px;
+  background-color: #666; }
+
+#my-work .timeline-block {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px; }
+  #my-work .timeline-block .icon-circle {
+    background: #333;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center; }
+  #my-work .timeline-block .icon {
+    color: #FFF;
+    position: relative;
+    top: 25%;
+    vertical-align: middle; }
+  #my-work .timeline-block .timeline-well {
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding: 5px; }
+    #my-work .timeline-block .timeline-well h3 {
+      font-size: 17px;
+      font-weight: 300;
+      font-family: "Heebo", sans-serif; }
+      #my-work .timeline-block .timeline-well h3 a {
+        font-weight: 700; }
+    #my-work .timeline-block .timeline-well .date {
+      color: #979797;
+      margin: 10px 0; }
+    #my-work .timeline-block .timeline-well .content p:last-of-type {
+      margin-bottom: 0px; }
+
 body {
   margin: 0;
   margin-top: 45px;
@@ -194,3 +248,6 @@ blockquote {
 
 .cite:last-of-type {
   margin-bottom: 10px; }
+
+.strong {
+  font-weight: 700; }

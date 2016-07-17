@@ -1,5 +1,79 @@
 @import "./_variables.scss";
 
 #my-work {
-  
+  section {
+    margin-top: 30px;
+  }
+
+  #timeline {
+    position: relative;
+  }
+
+  #timeline::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    height: 100%;
+    width: 2px;
+    background-color: $dark-gray;
+  }
+
+  .timeline-block {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+
+    .icon-circle {
+      background: $black;
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+
+      text-align: center;
+    }
+
+    .icon {
+      color: $white;
+      position: relative;
+      top: 25%;
+      vertical-align: middle;
+    }
+
+    .timeline-well {
+      position: relative;
+      display: inline-block;
+      margin-left: 60px;
+
+      background-color: $light-gray;
+      border-radius: 5px;
+      padding: 5px;
+
+      h3 {
+        font-size: 17px;
+        font-weight: 300;
+        font-family: $font-family;
+
+        a {
+          font-weight: 700;
+        }
+      }
+
+      .date {
+        color: $gray;
+        margin: 10px 0;
+      }
+
+      .content p:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
