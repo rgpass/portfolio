@@ -117,18 +117,22 @@
 #about section {
   padding: 40px 0px; }
 
+#about section:last-of-type {
+  padding-bottom: 20px; }
+
 #about #photos {
-  background-color: #F0F0F0; }
+  background-color: #F0F0F0;
+  text-align: center; }
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 20px; }
 
 #about img {
-  max-height: 300px;
-  margin: 0 auto;
-  max-width: 300px; }
+  max-width: 100%; }
 
-#about .quote {
-  color: #3B5998;
-  font-size: 28px;
-  font-style: italic; }
+#about blockquote:nth-of-type(even), #about .cite:nth-of-type(even) {
+  text-align: right; }
 
 body {
   margin: 0;
@@ -166,7 +170,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 14px;
   margin-top: 0;
-  text-align: justify;
   color: #666; }
   p:nth-of-type(0) {
     margin-top: 10px; }
@@ -181,11 +184,13 @@ p {
 
 blockquote {
   margin: 0 auto;
-  color: #333;
-  text-align: justify; }
+  color: #333; }
 
 .cite {
   display: block;
-  text-align: center;
   margin-top: 10px;
-  color: #979797; }
+  color: #979797;
+  margin-bottom: 30px; }
+
+.cite:last-of-type {
+  margin-bottom: 10px; }

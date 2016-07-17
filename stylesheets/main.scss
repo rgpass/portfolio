@@ -2,6 +2,7 @@
 @import "./_header.scss";
 @import "./_menu.scss";
 @import "./about.scss";
+@import "./my-work.scss";
 
 body {
   margin: 0;
@@ -57,8 +58,6 @@ p {
     margin-top: 10px;
   }
 
-  text-align: justify;
-
   color: $dark-gray;
 
   &:last-of-type {
@@ -76,12 +75,15 @@ p {
 blockquote {
   margin: 0 auto;
   color: $black;
-  text-align: justify;
 }
 
 .cite {
   display: block;
-  text-align: center;
   margin-top: 10px;
   color: $gray;
+  margin-bottom: 30px;
+}
+
+.cite:last-of-type {
+  margin-bottom: 10px;
 }

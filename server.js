@@ -13,6 +13,13 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/my-work', function(req, res) {
+  res.render('my-work', {
+    title: 'my work',
+    env: process.env.NODE_ENV
+  });
+});
+
 app.get('*', function (req, res) {
   res.render('about');
 });
