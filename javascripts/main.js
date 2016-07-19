@@ -29,8 +29,19 @@ checkboxTypes.forEach((type) => {
 
       // TODO: Figure out why relevantBlocks.forEach doesn't work
       for (let i = 0; i < relevantBlocks.length; i++) {
-        let block = relevantBlocks[i];
-        block.classList.toggle('out');
+        const block = relevantBlocks[i];
+
+        const hasOut = block.classList.contains('out');
+        const hasIn = block.classList.contains('in');
+
+        if (!hasOut && !hasIn) {
+          block.classList.add('out');
+          block.classList.remove('in');
+        }
+        else {
+          block.classList.toggle('in');
+          block.classList.toggle('out');
+        }
       }
     });
   }
