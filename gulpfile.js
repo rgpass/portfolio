@@ -39,7 +39,8 @@ gulp.task('copy-images', function copyFiles() {
 gulp.task('watch', function watchForChanges() {
   browserSync.init({
     proxy: 'http://localhost:3000',
-    open: false
+    open: false,
+    ghostMode: false
   });
 
   gulp.watch(scssPaths, ['sass']).on('change', browserSync.reload);
