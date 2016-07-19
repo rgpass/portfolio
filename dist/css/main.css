@@ -122,10 +122,19 @@
     max-height: 100px;
     max-width: 100px;
     border-radius: 50%; }
+    @media (max-width: 425px) {
+      #about #intro #headshot {
+        display: none; } }
   #about #intro #intro-content {
     display: table-cell;
     vertical-align: middle;
     padding-left: 20px; }
+    @media (max-width: 425px) {
+      #about #intro #intro-content {
+        padding-left: 0px; } }
+    @media (min-width: 426px) and (max-width: 1023px) {
+      #about #intro #intro-content {
+        padding-left: 5px; } }
 
 #about section {
   padding: 40px 0px; }
@@ -152,6 +161,9 @@
   margin-right: 20px; }
   #about img:last-of-type {
     margin-right: 0px; }
+    @media (max-width: 1023px) {
+      #about img:last-of-type {
+        margin-right: 10px; } }
 
 #about blockquote:nth-of-type(even), #about .cite:nth-of-type(even) {
   text-align: right; }
