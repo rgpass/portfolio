@@ -1,7 +1,7 @@
 const menuTrigger = document.getElementById('menu-trigger');
 const menu = document.getElementById('menu');
 
-menuTrigger.addEventListener('click', () => {
+menuTrigger.addEventListener('click', (event) => {
   event.preventDefault();
 
   menuTrigger.classList.toggle('opened');
