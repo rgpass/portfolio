@@ -8,8 +8,9 @@
   #options {
     margin-top: 20px;
 
-    label {
-      margin-right: 10px;
+    #viewing {
+      margin-right: 15px;
+      font-weight: 700;
     }
   }
 
@@ -90,8 +91,9 @@
 
   .timeline-block.out {
     animation-name: disappear;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 
     @keyframes disappear {
       0% {
@@ -111,8 +113,9 @@
 
   .timeline-block.in {
     animation-name: appear;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 
     @keyframes appear {
       0% {
