@@ -74,7 +74,8 @@
     display: table-cell;
     vertical-align: middle;
     width: 1px;
-    white-space: nowrap; }
+    white-space: nowrap;
+    padding-right: 9px; }
     @media (max-width: 425px) {
       #header #menu-listed {
         display: none; } }
