@@ -1,19 +1,41 @@
+#about #intro {
+  display: table; }
+  #about #intro #headshot {
+    display: table-cell;
+    vertical-align: middle;
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 50%; }
+  #about #intro #intro-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px; }
+
 #about section {
   padding: 40px 0px; }
 
 #about section:last-of-type {
   padding-bottom: 20px; }
 
+#about #summary {
+  margin-bottom: 20px; }
+
 #about #photos {
   background-color: #F0F0F0;
-  text-align: center; }
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: scroll; }
 
 #about h2 {
   text-align: center;
   margin-bottom: 20px; }
 
 #about img {
-  max-width: 100%; }
+  max-height: 200px;
+  margin-right: 20px; }
+  #about img:last-of-type {
+    margin-right: 0px; }
 
 #about blockquote:nth-of-type(even), #about .cite:nth-of-type(even) {
   text-align: right; }

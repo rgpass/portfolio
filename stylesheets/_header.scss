@@ -21,7 +21,7 @@
 
   #wrapper {
     width: calc(100%);
-    max-width: 1440px;
+    max-width: $max-width;
     margin: 0 auto;
     height: 100%;
     display: table;

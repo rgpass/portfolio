@@ -1,6 +1,25 @@
 @import "./_variables.scss";
 
 #about {
+  #intro {
+    display: table;
+
+    #headshot {
+      display: table-cell;
+      vertical-align: middle;
+      max-height: 100px;
+      max-width: 100px;
+      border-radius: 50%;
+    }
+
+    #intro-content {
+      display: table-cell;
+      vertical-align: middle;
+
+      padding-left: 20px;
+    }
+  }
+
   section {
     padding: 40px 0px;
   }
@@ -9,9 +28,16 @@
     padding-bottom: 20px;
   }
 
+  #summary {
+    margin-bottom: 20px;
+  }
+
   #photos {
     background-color: $light-gray;
+    width: 100%;
     text-align: center;
+    white-space: nowrap;
+    overflow: scroll;
   }
 
   h2 {
@@ -20,7 +46,12 @@
   }
 
   img {
-    max-width: 100%;
+    max-height: 200px;
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0px;
+    }
   }
 
   blockquote:nth-of-type(even), .cite:nth-of-type(even) {

@@ -16,7 +16,7 @@ body {
 
 main {
   width: 100%;
-  max-width: 1440px;
+  max-width: $max-width;
   margin: 0 auto;
   margin-top: 60px;
 
@@ -109,4 +109,8 @@ blockquote {
     color: $white;
     text-decoration: none;
   }
+}
+
+.text-center {
+  text-align: center;
 }
