@@ -8,7 +8,9 @@
     "node": "6.3.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "portfolio"
@@ -26,6 +28,7 @@
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
     "gulp-sass": "^2.3.2"
   }
 }

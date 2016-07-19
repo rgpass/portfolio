@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var clean = require('gulp-clean');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 var browserSync = require('browser-sync').create();
@@ -9,6 +10,11 @@ var jsPaths = './javascripts/**/*.js';
 var imgPaths = './images/**/*.*';
 var viewPaths = './views/**/*.ejs';
 var pathsToCopy = [imgPaths];
+
+gulp.task('clean', function() {
+  return gulp.src(distPath, { read: false })
+    .pipe(clean());
+});
 
 gulp.task('sass', function compileSass() {
   return gulp.src(scssPaths)
@@ -40,6 +46,7 @@ gulp.task('watch', function watchForChanges() {
   gulp.watch(viewPaths).on('change', browserSync.reload);
 });
 
-gulp.task('serve', ['sass', 'es6', 'copy-images', 'watch']);
+gulp.task('build', ['clean', 'sass', 'es6', 'copy-images']);
+gulp.task('serve', ['build', 'watch']);
 
 gulp.task('default', ['serve']);
