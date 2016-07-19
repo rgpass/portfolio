@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var clean = require('gulp-clean');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
+var sync = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
 var distPath = './dist';
@@ -46,7 +47,13 @@ gulp.task('watch', function watchForChanges() {
   gulp.watch(viewPaths).on('change', browserSync.reload);
 });
 
-gulp.task('build', ['clean', 'sass', 'es6', 'copy-images']);
-gulp.task('serve', ['build', 'watch']);
+gulp.task('build', function(done) {
+  sync('clean', 'sass', 'es6', 'copy-images', done);
+});
+
+gulp.task('serve', function(done) {
+  sync('build', 'watch', done);
+});
 
 gulp.task('default', ['serve']);
+
