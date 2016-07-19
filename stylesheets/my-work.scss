@@ -5,6 +5,14 @@
     margin-top: 30px;
   }
 
+  #options {
+    margin-top: 20px;
+
+    label {
+      margin-right: 10px;
+    }
+  }
+
   #timeline {
     position: relative;
   }
@@ -78,4 +86,11 @@
       }
     }
   }
+
+  .timeline-block.out {
+    display: none;
+  }
 }
+
+
+

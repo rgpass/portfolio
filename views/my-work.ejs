@@ -8,8 +8,6 @@
 <% include ./shared/_header.ejs %>
 <% include ./shared/_menu.ejs %>
 
-<script src="/js/main.js"></script>
-
 <main id="my-work">
 <div class="wrapper">
   <h1>my work</h1>
@@ -18,8 +16,31 @@
     I’m an engineer; I build fully-functional, user-friendly products and solve problems.
   </h4>
 
+  <div id="options">
+    <label>
+      <input type="checkbox" id="projects" checked> projects
+    </label>
+
+    <label>
+      <input type="checkbox" id="books" checked> books read
+    </label>
+
+    <label>
+      <input type="checkbox" id="jobs" checked> jobs
+    </label>
+
+    <label>
+      <input type="checkbox" id="classes" checked> classes taken
+    </label>
+
+    <label>
+      <input type="checkbox" id="miscellaneous" checked> miscellaneous
+    </label>
+  </div>
+
+
   <section id="timeline">
-    <div class="timeline-block">
+    <div class="timeline-block projects">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-fighter-jet"></i></span>
       </div>
@@ -43,7 +64,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -63,7 +84,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -83,7 +104,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -103,7 +124,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -123,7 +144,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -145,7 +166,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block classes">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-level-up"></i></span>
       </div>
@@ -165,7 +186,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block classes">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-level-up"></i></span>
       </div>
@@ -185,7 +206,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block classes">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-level-up"></i></span>
       </div>
@@ -205,7 +226,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -225,7 +246,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block miscellaneous">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-group"></i></span>
       </div>
@@ -245,7 +266,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -265,7 +286,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -285,7 +306,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -305,7 +326,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -325,7 +346,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -345,7 +366,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -365,7 +386,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -385,7 +406,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -407,7 +428,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block projects">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-fighter-jet"></i></span>
       </div>
@@ -431,7 +452,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block projects">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-fighter-jet"></i></span>
       </div>
@@ -459,7 +480,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -479,7 +500,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -499,7 +520,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -519,7 +540,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block projects">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-fighter-jet"></i></span>
       </div>
@@ -543,7 +564,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -565,7 +586,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -585,7 +606,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -611,7 +632,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block projects">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-fighter-jet"></i></span>
       </div>
@@ -635,7 +656,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block books">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-book"></i></span>
       </div>
@@ -657,7 +678,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -679,7 +700,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -699,7 +720,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block miscellaneous">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-check"></i></span>
       </div>
@@ -719,7 +740,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block jobs">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-briefcase"></i></span>
       </div>
@@ -745,7 +766,7 @@
       </div>
     </div>
 
-    <div class="timeline-block">
+    <div class="timeline-block miscellaneous">
       <div class="icon-circle">
         <span class="icon"><i class="fa fa-fw fa-lg fa-graduation-cap"></i></span>
       </div>
@@ -767,6 +788,8 @@
   </section>
 </div>
 </main>
+
+<script src="/js/main.js"></script>
 
 </body>
 </html>

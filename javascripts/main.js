@@ -17,3 +17,21 @@ if (document.location.hostname !== 'gerrypass.com') {
   ga('create', 'UA-80985911-1', 'auto');
   ga('send', 'pageview');
 }
+
+const checkboxTypes = ['projects', 'books', 'jobs', 'classes', 'miscellaneous']
+
+checkboxTypes.forEach((type) => {
+  const selector = document.getElementById(type);
+
+  if (selector) {
+    selector.addEventListener('click', () => {
+      const relevantBlocks = document.getElementsByClassName(type);
+
+      // TODO: Figure out why relevantBlocks.forEach doesn't work
+      for (let i = 0; i < relevantBlocks.length; i++) {
+        let block = relevantBlocks[i];
+        block.classList.toggle('out');
+      }
+    });
+  }
+});
