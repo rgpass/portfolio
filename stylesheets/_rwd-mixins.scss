@@ -10,8 +10,20 @@
   }
 }
 
+@mixin laptop-only {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin mobile-and-tablet {
   @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin tablet-and-laptop {
+  @media (min-width: 426px) {
     @content;
   }
 }

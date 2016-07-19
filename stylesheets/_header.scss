@@ -1,4 +1,5 @@
 @import "./_variables.scss";
+@import "./_rwd-mixins.scss";
 
 #header {
   background-color: $blue;
@@ -43,22 +44,11 @@
     width: 100%;
   }
 
-  #menu-trigger-wrapper {
-    display: table-cell;
-    width: 1px;
-    padding: 0 $outside-gutter-spacing;
-    vertical-align: middle;
-    text-align: right;
-
-    span {
-      content: '';
-      background: $white;
-      height: 4px;
-      width: 36px;
-    }
-  }
-
   #menu-trigger {
+    @include tablet-and-laptop {
+      display: none;
+    }
+
     position: fixed;
     top: 0;
     right: 2px;
@@ -113,6 +103,25 @@
 
       span::after {
         transform: rotate(45deg);
+      }
+    }
+  }
+
+  #menu-listed {
+    @include mobile-only {
+      display: none;
+    }
+
+    display: table-cell;
+    vertical-align: middle;
+    width: 1px;
+    white-space: nowrap;
+
+    a {
+      padding: 0 $outside-gutter-spacing;
+
+      &:hover, &:focus {
+        text-decoration: underline;
       }
     }
   }

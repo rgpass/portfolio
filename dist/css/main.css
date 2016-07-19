@@ -31,17 +31,6 @@
   #header #middle {
     display: table-cell;
     width: 100%; }
-  #header #menu-trigger-wrapper {
-    display: table-cell;
-    width: 1px;
-    padding: 0 10px;
-    vertical-align: middle;
-    text-align: right; }
-    #header #menu-trigger-wrapper span {
-      content: '';
-      background: #FFF;
-      height: 4px;
-      width: 36px; }
   #header #menu-trigger {
     position: fixed;
     top: 0;
@@ -53,6 +42,9 @@
     color: transparent;
     white-space: nowrap;
     text-indent: 100%; }
+    @media (min-width: 426px) {
+      #header #menu-trigger {
+        display: none; } }
     #header #menu-trigger span, #header #menu-trigger span::before, #header #menu-trigger span::after {
       position: absolute;
       height: 4px;
@@ -78,6 +70,18 @@
       transform: rotate(-45deg); }
     #header #menu-trigger.opened span::after {
       transform: rotate(45deg); }
+  #header #menu-listed {
+    display: table-cell;
+    vertical-align: middle;
+    width: 1px;
+    white-space: nowrap; }
+    @media (max-width: 425px) {
+      #header #menu-listed {
+        display: none; } }
+    #header #menu-listed a {
+      padding: 0 10px; }
+      #header #menu-listed a:hover, #header #menu-listed a:focus {
+        text-decoration: underline; }
 
 #menu {
   box-sizing: border-box;
@@ -209,7 +213,8 @@
     margin-left: 60px;
     background-color: #F0F0F0;
     border-radius: 5px;
-    padding: 5px; }
+    padding: 5px;
+    width: calc(100% - 70px); }
     #my-work .timeline-block .timeline-well h3 {
       font-size: 17px;
       font-weight: 300;
