@@ -27,3 +27,15 @@
     @content;
   }
 }
+
+@mixin under-cutoff-width {
+  @media (max-width: 655px) {
+    @content;
+  }
+}
+
+@mixin over-cutoff-width {
+  @media (min-width: 656px) {
+    @content;
+  }
+}

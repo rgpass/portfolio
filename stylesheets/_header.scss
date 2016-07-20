@@ -45,7 +45,7 @@
   }
 
   #menu-trigger {
-    @include tablet-and-laptop {
+    @include over-cutoff-width {
       display: none;
     }
 
@@ -108,7 +108,7 @@
   }
 
   #menu-listed {
-    @include mobile-only {
+    @include under-cutoff-width {
       display: none;
     }
 
