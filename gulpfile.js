@@ -14,7 +14,7 @@ const path = {
 };
 const pathsToCopy = [path.img];
 
-gulp.task('clean', function clean() {
+gulp.task('clean', function cleanDist() {
   return gulp.src(path.dist, { read: false })
     .pipe(clean());
 });
