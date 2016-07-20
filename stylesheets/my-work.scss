@@ -65,11 +65,15 @@
       display: inline-block;
       margin-left: 60px;
 
-      background-color: $light-gray;
+      background-color: $well-bg-color;
       border-radius: 5px;
       padding: 5px;
 
       width: calc(100% - 70px);
+
+      p {
+        color: $well-text-color;
+      }
 
       h3 {
         font-size: 17px;

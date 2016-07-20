@@ -6,7 +6,11 @@
   }
 
   .content-well {
-    background-color: $light-gray;
+    background-color: $well-bg-color;
+
+    p {
+      color: $well-text-color;
+    }
 
     margin-bottom: 20px;
     &:last-of-type {
