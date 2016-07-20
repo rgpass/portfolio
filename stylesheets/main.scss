@@ -143,19 +143,56 @@ blockquote {
   text-align: center;
   padding-top: 5px;
 
-  transition: background $checkbox-transition-time linear;
+  animation-name: big-uncheck;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes big-uncheck {
+  0% {
+    background-color: $blue;
+  }
+
+  50% {
+    background-color: $white;
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .checkbox:checked + label:before {
   content: "\f00c";
   padding-top: 5px;
   font-family: 'FontAwesome';
-  background: $blue;
+  background-color: $blue;
   color: $white;
 
-  transition: background $checkbox-transition-time linear;
+  animation-name: big-check;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 label {
   white-space: nowrap;
 }
+
+@keyframes big-check {
+  0% {
+    background-color: $white;
+  }
+
+  50% {
+    background-color: $blue;
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
