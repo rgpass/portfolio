@@ -142,8 +142,6 @@ blockquote {
   margin-right: 5px;
   text-align: center;
   padding-top: 5px;
-
-  transition: background-color 0.6s ease-in;
 }
 
 .checkbox:checked + label:before {
@@ -152,8 +150,6 @@ blockquote {
   font-family: 'FontAwesome';
   background: $blue;
   color: $white;
-
-  transition: background-color 0.6s ease-in;
 }
 
 label {

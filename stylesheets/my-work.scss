@@ -90,6 +90,9 @@
   }
 
   .timeline-block.out {
+    /* Firefox will not animate the height down */
+    /* Keeping this for reference later */
+    /*
     animation-name: disappear;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -107,9 +110,12 @@
         visibility: hidden;
       }
     }
+    */
+    display: none;
   }
 
   .timeline-block.in {
+    /*
     animation-name: appear;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -126,6 +132,8 @@
         opacity: 1;
       }
     }
+    */
+    display: block;
   }
 }
 
