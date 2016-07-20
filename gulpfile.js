@@ -1,39 +1,41 @@
-var gulp = require('gulp');
-var clean = require('gulp-clean');
-var sass = require('gulp-sass');
-var babel = require('gulp-babel');
-var sync = require('run-sequence');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const clean = require('gulp-clean');
+const sass = require('gulp-sass');
+const babel = require('gulp-babel');
+const sync = require('run-sequence');
+const browserSync = require('browser-sync').create();
 
-var distPath = './dist';
-var scssPaths = './stylesheets/**/*.scss';
-var jsPaths = './javascripts/**/*.js';
-var imgPaths = './images/**/*.*';
-var viewPaths = './views/**/*.ejs';
-var pathsToCopy = [imgPaths];
+const path = {
+  dist: './dist',
+  scss: './stylesheets/**/*.scss',
+  js: './javascripts/**/*.js',
+  img: './images/**/*.*',
+  views: './views/**/*.ejs'
+};
+const pathsToCopy = [path.img];
 
-gulp.task('clean', function() {
-  return gulp.src(distPath, { read: false })
+gulp.task('clean', function clean() {
+  return gulp.src(path.dist, { read: false })
     .pipe(clean());
 });
 
 gulp.task('sass', function compileSass() {
-  return gulp.src(scssPaths)
+  return gulp.src(path.scss)
     .pipe(sass())
-    .pipe(gulp.dest(distPath + '/css'));
+    .pipe(gulp.dest(path.dist + '/css'));
 });
 
 gulp.task('es6', function transpileJS() {
-  return gulp.src(jsPaths)
+  return gulp.src(path.js)
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(gulp.dest(distPath + '/js'));
+    .pipe(gulp.dest(path.dist + '/js'));
 });
 
 gulp.task('copy-images', function copyFiles() {
   return gulp.src(pathsToCopy)
-    .pipe(gulp.dest(distPath + '/img'));
+    .pipe(gulp.dest(path.dist + '/img'));
 });
 
 gulp.task('watch', function watchForChanges() {
@@ -43,16 +45,16 @@ gulp.task('watch', function watchForChanges() {
     ghostMode: false
   });
 
-  gulp.watch(scssPaths, ['sass']).on('change', browserSync.reload);
-  gulp.watch(jsPaths, ['es6']).on('change', browserSync.reload);
-  gulp.watch(viewPaths).on('change', browserSync.reload);
+  gulp.watch(path.scss, ['sass']).on('change', browserSync.reload);
+  gulp.watch(path.js, ['es6']).on('change', browserSync.reload);
+  gulp.watch(path.views).on('change', browserSync.reload);
 });
 
-gulp.task('build', function(done) {
+gulp.task('build', function build(done) {
   sync('clean', 'sass', 'es6', 'copy-images', done);
 });
 
-gulp.task('serve', function(done) {
+gulp.task('serve', function serve(done) {
   sync('build', 'watch', done);
 });
 
