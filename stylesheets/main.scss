@@ -32,7 +32,7 @@ a {
 
   &, &:visited {
     color: $blue;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   &:hover {
@@ -73,7 +73,7 @@ p {
   margin-top: 10px;
   font-size: 17px;
   font-family: $font-family;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 blockquote {
@@ -128,7 +128,7 @@ blockquote {
 
 .checkbox + label {
   margin-right: 15px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .checkbox + label:before {

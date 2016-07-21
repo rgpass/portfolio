@@ -17,13 +17,15 @@
       margin-bottom: 0px;
     }
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px;
 
     .problem {
       font-weight: 700;
+      font-style: italic;
 
       .not-bold {
-        font-weight: 300;
+        font-weight: 400;
+        font-style: normal;
       }
     }
   }

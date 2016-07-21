@@ -74,4 +74,8 @@
   blockquote:nth-of-type(even), .cite:nth-of-type(even) {
     text-align: right;
   }
+
+  .job-title {
+    white-space: nowrap;
+  }
 }

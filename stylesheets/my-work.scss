@@ -1,4 +1,5 @@
 @import "./_variables.scss";
+@import "./_rwd-mixins.scss";
 @import "./_prefix-mixins.scss";
 
 #my-work {
@@ -67,9 +68,17 @@
 
       background-color: $well-bg-color;
       border-radius: 5px;
-      padding: 5px;
+      padding: 10px;
+
+      @include mobile-only {
+        padding: 5px;
+      }
 
       width: calc(100% - 70px);
+
+      @include tablet-and-laptop {
+        width: calc(100% - 80px);
+      }
 
       p {
         color: $well-text-color;
