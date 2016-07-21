@@ -11,6 +11,7 @@
   width: 100%;
   max-width: 228px;
   height: calc(100vh - 42px);
+  overflow: scroll;
 
   background-color: $blue;
   color: $white;
