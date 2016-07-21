@@ -45,7 +45,7 @@ a {
 }
 
 * {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,7 +62,7 @@ p {
     margin-top: 10px;
   }
 
-  color: $dark-gray;
+  color: $black;
 
   &:last-of-type {
     margin-bottom: 0px;
@@ -73,7 +73,7 @@ p {
   margin-top: 10px;
   font-size: 17px;
   font-family: $font-family;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 blockquote {
@@ -128,6 +128,7 @@ blockquote {
 
 .checkbox + label {
   margin-right: 15px;
+  font-weight: 300;
 }
 
 .checkbox + label:before {
