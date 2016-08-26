@@ -12,9 +12,9 @@ NODE_ENV=development
 PORT=3000
 ```
 
-* Start the server with foreman: `$ nf start dev=1`
+* Start the server with foreman: `$ npm run dev:server`
   * Can simulate the web environment: `$ nf start web=1`
-* Start watch processes: `$ gulp serve`
+* Start watch processes: `$ npm run dev:sync`
 
 # File Organization
 
